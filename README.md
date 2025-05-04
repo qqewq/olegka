@@ -1,0 +1,2 @@
+# olegka
+my algorithm
