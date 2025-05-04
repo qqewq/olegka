@@ -1,9 +1,42 @@
 # olegka
 my algorithm
 Algorithm Description
-Author: [Ваше имя или псевдоним]
-Date: [Укажите дату]
-Contact: [E-mail, Telegram, соцсети]
+Author: [oleg bitsoev]
+Date: [04/04/2025]
+Contact: [E-mail,bits.oleg@bk.ru]
+## Overview
+
+This algorithm explores iterative goal refinement using reinforcement learning (RL) and generative adversarial networks (GANs), with combinatorial search for subgoals to maximize the probability of achieving a given main goal.
+### Probabilistic Update
+
+For each scenario $S_i$:
+
+$$
+\Delta P(S_i) = \sum_{A} P(A) \cdot I(A, S_i)
+$$
+
+$$
+P'(S_i) = P(S_i) + \Delta P(S_i)
+$$
+import itertools
+
+subgoals = ["Change approach", "Modify environment", "Make constants variable"]
+strategies = [
+    {"name": "Strategy 1", "prob": 0.5, "influence": 0.02},
+    {"name": "Strategy 2", "prob": 0.3, "influence": 0.04},
+    {"name": "Strategy 3", "prob": 0.2, "influence": -0.01},
+]
+P_success = 0.01
+
+for r in range(1, len(subgoals)+1):
+    for combo in itertools.combinations(subgoals, r):
+        delta_P = sum(s["prob"] * s["influence"] for s in strategies)
+        new_prob = P_success + delta_P
+        print(f"Subgoals: {combo}, Success probability: {new_prob:.3f}")
+Author: olegka
+Date of creation: 2025-05-04
+Contact: [email/telegram]
+This repository documents the original algorithm and theoretical framework developed by olegka.
 
 Overview
 This file documents the original idea and structure of my algorithm for iterative goal refinement and discovery using RL and GAN, as well as its probabilistic formalization. The algorithm is designed to systematically search for combinations of subgoals that maximize the probability of achieving a revolutionary or highly improbable main goal.
