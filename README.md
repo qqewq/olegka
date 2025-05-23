@@ -1,9 +1,9 @@
 # olegka
 my algorithm
 Algorithm Description
-Author: [oleg bitsoev]
+Author: 
 Date: [04/04/2025]
-Contact: [E-mail,bits.oleg@bk.ru]
+Contact: 
 ## Overview
 
 This algorithm explores iterative goal refinement using reinforcement learning (RL) and generative adversarial networks (GANs), with combinatorial search for subgoals to maximize the probability of achieving a given main goal.
@@ -33,7 +33,7 @@ for r in range(1, len(subgoals)+1):
         delta_P = sum(s["prob"] * s["influence"] for s in strategies)
         new_prob = P_success + delta_P
         print(f"Subgoals: {combo}, Success probability: {new_prob:.3f}")
-Author: olegka
+Author: 
 Date of creation: 2025-05-04
 Contact: [email/telegram]
 This repository documents the original algorithm and theoretical framework developed by olegka.
