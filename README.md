@@ -1,9 +1,9 @@
 # olegka
 my algorithm
 Algorithm Description
-Author: 
+Author: oleg.bits.97@gmail.com
 Date: [04/04/2025]
-Contact: 
+Contact: oleg.bits.97@gmail.com
 ## Overview
 
 This algorithm explores iterative goal refinement using reinforcement learning (RL) and generative adversarial networks (GANs), with combinatorial search for subgoals to maximize the probability of achieving a given main goal.
