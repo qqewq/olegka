@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\geometry{a4paper, margin=1cm}
+
+\title{Hybrid Algorithm: Compact Description}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Overview}
+Universal goal-driven problem-solving algorithm combining:
+
+    
+- Resonance analysis
+    
+- Dynamic constraints
+    
+- Reinforcement learning (RL + GAN)
+    
+- Attention mechanisms
+
+
+\section*{Core Equation}
+\[
+P_{\text{total}} = 1 - \prod_{i=1}^n (1 - P_i)
+\]
+Measures total success probability across independent subgoals.
+
+\section*{Key Components}
+\subsection*{1. Resonance Analysis}
+Finds critical points where small changes yield large effects:
+\[
+\omega_{\text{res}} = \frac{1}{D} \cdot \sum_{k=1}^N \frac{q_k}{m_k}
+\]
+
+\subsection*{2. Dynamic Constraint Manipulation}
+Uses tokens like \texttt{[VAR\_c]}, \texttt{[CONST\_c]} to temporarily change constants.
+
+\subsection*{3. Attention Mechanism}
+\[
+\alpha_i = \frac{e^{\omega_{\text{res},i}}}{\sum_j e^{\omega_{\text{res},j}}}
+\]
+Focuses attention on high-impact parameters.
+
+\subsection*{4. RL + GAN}
+
+    
+- \textbf{Generator}: Proposes new hypotheses
+    
+- \textbf{Discriminator}: Evaluates feasibility
+    
+- \textbf{RL}: Reinforces successful strategies
+
+
+\section*{Complexity}
+\begin{tabular}{|l|l|}
+\hline
+Algorithm & Complexity \\
+\hline
+Basic & $ O(2^{m+n}) $ \\
+Hybrid & $ O(n^2) $ \\
+\hline
+\end{tabular}
+
+\section*{Advantages}
+
+    
+- Handles large search spaces
+    
+- Learns from data
+    
+- Generates novel hypotheses
+    
+- Works with sequences and context
+
+
+\section*{Use Cases}
+
+    
+- Drug discovery
+    
+- Autonomous driving
+    
+- Space navigation
+    
+- Nanotech design
+
+
+\section*{Limitations}
+
+    
+- Requires training data
+    
+- Needs GPU for training
+    
+- May generate "impossible" scenarios
+
+
+\section*{When to Use Basic Algorithm}
+
+    
+- Small number of subgoals (3–5)
+    
+- No GPU/data
+    
+- Deterministic output needed
+
+
+\end{document}
